@@ -606,13 +606,14 @@ body {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: var(--third-background-color);
 }
 
 .team-social-media-item:is(:hover, :focus),
 .footer-social-media-item:is(:hover, :focus) {
   background: var(--logo-color);
   cursor: pointer;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .team-social-media-item:is(:hover, :focus) .team-social-media-svg {
@@ -889,6 +890,7 @@ height: 24px;
   border-radius: 4px;
   flex-basis: calc((100% - 4 * 8) / 5);
   padding: 6px 22px;
+      transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .sorting-button:nth-child(1) {
@@ -900,7 +902,6 @@ height: 24px;
   background: var(--logo-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 /* PROJECTS */
@@ -961,6 +962,7 @@ height: 24px;
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .projects-overlay-text {
